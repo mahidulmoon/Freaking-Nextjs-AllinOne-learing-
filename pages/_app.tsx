@@ -1,3 +1,3 @@
-export default function page1(props){
-  return <h1>hello from app</h1>
+export default function page1({Component,pageProps}){
+  return <Component {...pageProps} />
 }
