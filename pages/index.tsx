@@ -1,9 +1,10 @@
+import { rootCertificates } from "tls"
 
 
-export default function Home() {
+function Home(props) {
   return(
     <div>
-      <h1 className="title">Hello world</h1>
+      <h1 className="title">{props.text}</h1>
       <style jsx>
           {`
             .title{
@@ -11,6 +12,15 @@ export default function Home() {
             }
           `}
       </style>
+    </div>
+  )
+}
+
+
+export default function Major(){
+  return(
+    <div>
+        <Home text="Hello mother fucker" />
     </div>
   )
 }
