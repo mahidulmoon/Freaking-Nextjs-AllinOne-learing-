@@ -1,6 +1,16 @@
 
 
 export default function Home() {
-  return <h1>Hello world</h1>
-  
+  return(
+    <div>
+      <h1 className="title">Hello world</h1>
+      <style jsx>
+          {`
+            .title{
+              color: red;
+            }
+          `}
+      </style>
+    </div>
+  )
 }
