@@ -13,6 +13,7 @@ function Home(props) {
             }
           `}
       </style>
+      <h2 className="custom">This is to test from golbal css file</h2>
     </div>
   )
 }
