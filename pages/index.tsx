@@ -14,6 +14,14 @@ function Home(props) {
           `}
       </style>
       <h2 className="custom">This is to test from golbal css file</h2>
+
+      <form method="POST" action="api/login">
+        <input type="text" name="username" value="admin" />
+        <br />
+        <input type="password" name="password" value="admin" />
+        <br />
+        <input type="submit" value="login" />
+      </form>
     </div>
   )
 }
