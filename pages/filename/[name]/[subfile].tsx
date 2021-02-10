@@ -1,5 +1,9 @@
+import {useRouter} from 'next/router'
+
 export default function FilaName(){
-    return <h1>Dynamic routing is working</h1>
+
+    const router = useRouter()
+    return <h1>Dynamic routing is working.path:{router.query.name}/{router.query.subname}</h1>
 }
 
 //http://localhost:3000/filename/abc/123 -> working 
