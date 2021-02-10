@@ -1,6 +1,7 @@
 import { rootCertificates } from "tls"
 import {useState} from "react"
 import jwt from 'jsonwebtoken'
+import Link from 'next/link'
 
 function Home(props) {
   const [username,setUsername] = useState<string>('')
@@ -35,6 +36,8 @@ function Home(props) {
           `}
       </style>
       <h2 className="custom">This is to test from golbal css file</h2>
+      <br />
+      <h2><Link href="/nicepage">Another Page</Link></h2>
 
       <form>
         <input type="text" name="username" value={username} onChange={e => setUsername(e.target.value)} />
