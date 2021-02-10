@@ -38,6 +38,8 @@ function Home(props) {
       <h2 className="custom">This is to test from golbal css file</h2>
       <br />
       <h2><Link href="/nicepage">Another Page</Link></h2>
+      <h2><Link href="/page1">Page1</Link></h2>
+      <h2><Link href="/page1/mahidulmoon">Mahidulmoon</Link></h2>
 
       <form>
         <input type="text" name="username" value={username} onChange={e => setUsername(e.target.value)} />
